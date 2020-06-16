@@ -101,10 +101,15 @@ function selectRandom(arr) {
 }
 
 function pickMystery() {
-  const suspect = selectRandom(suspectsArray);
-  const weapon = selectRandom(weaponsArray);
-  const room = selectRandom(roomsArray);
-  return { suspect, weapon, room };
+  //   const suspect = selectRandom(suspectsArray);
+  //   const weapon = selectRandom(weaponsArray);
+  //   const room = selectRandom(roomsArray);
+  //   return { suspect, weapon, room };
+  return {
+    suspect: selectRandom(suspectsArray),
+    weapon: selectRandom(weaponsArray),
+    room: selectRandom(roomsArray),
+  };
 }
 
 // ITERATION 3
